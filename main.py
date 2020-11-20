@@ -41,6 +41,6 @@ class SSLWSGIRefServer(ServerAdapter):
         
         srv.serve_forever()
         
-conn = connection.ConnectionHandler()
+# conn = connection.ConnectionHandler()
 srv = SSLWSGIRefServer(host="10.0.0.5", port=serverport)
 run(server=srv)
